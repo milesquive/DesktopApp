@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.DTProductListView = new System.Windows.Forms.DataGridView();
-            this.BTNSubmit = new System.Windows.Forms.Button();
-            this.BTNCancel = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CMBSalesType = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BTNCancel = new System.Windows.Forms.Button();
+            this.BTNSubmit = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DTProductListView = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTProductListView)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -69,22 +70,100 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caracterização do Produto";
             // 
-            // label1
+            // groupBox3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código do Produto: ";
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.CMBSalesType);
+            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(6, 88);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(940, 68);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Preco do Produto";
             // 
-            // textBox1
+            // CMBSalesType
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 30);
-            this.textBox1.TabIndex = 1;
+            this.CMBSalesType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMBSalesType.FormattingEnabled = true;
+            this.CMBSalesType.Location = new System.Drawing.Point(700, 28);
+            this.CMBSalesType.Name = "CMBSalesType";
+            this.CMBSalesType.Size = new System.Drawing.Size(220, 21);
+            this.CMBSalesType.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(394, 27);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(165, 30);
+            this.textBox5.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(295, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Preco de Venda:: ";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(109, 27);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(165, 30);
+            this.textBox4.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Preço de Compra: ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(841, 19);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(105, 30);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(712, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Quantidade do Produto: ";
+            // 
+            // BTNCancel
+            // 
+            this.BTNCancel.Location = new System.Drawing.Point(871, 176);
+            this.BTNCancel.Name = "BTNCancel";
+            this.BTNCancel.Size = new System.Drawing.Size(75, 23);
+            this.BTNCancel.TabIndex = 5;
+            this.BTNCancel.Text = "Cancelar";
+            this.BTNCancel.UseVisualStyleBackColor = true;
+            this.BTNCancel.Click += new System.EventHandler(this.BTNCancel_Click);
+            // 
+            // BTNSubmit
+            // 
+            this.BTNSubmit.Location = new System.Drawing.Point(776, 176);
+            this.BTNSubmit.Name = "BTNSubmit";
+            this.BTNSubmit.Size = new System.Drawing.Size(75, 23);
+            this.BTNSubmit.TabIndex = 4;
+            this.BTNSubmit.Text = "Submeter";
+            this.BTNSubmit.UseVisualStyleBackColor = true;
+            this.BTNSubmit.Click += new System.EventHandler(this.BTNSubmit_Click);
             // 
             // textBox2
             // 
@@ -102,6 +181,23 @@
             this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Descrição do Produto: ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(129, 26);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(165, 30);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código do Produto: ";
             // 
             // groupBox2
             // 
@@ -122,98 +218,14 @@
             this.DTProductListView.Size = new System.Drawing.Size(965, 260);
             this.DTProductListView.TabIndex = 0;
             // 
-            // BTNSubmit
+            // label6
             // 
-            this.BTNSubmit.Location = new System.Drawing.Point(776, 176);
-            this.BTNSubmit.Name = "BTNSubmit";
-            this.BTNSubmit.Size = new System.Drawing.Size(75, 23);
-            this.BTNSubmit.TabIndex = 4;
-            this.BTNSubmit.Text = "Submeter";
-            this.BTNSubmit.UseVisualStyleBackColor = true;
-            // 
-            // BTNCancel
-            // 
-            this.BTNCancel.Location = new System.Drawing.Point(871, 176);
-            this.BTNCancel.Name = "BTNCancel";
-            this.BTNCancel.Size = new System.Drawing.Size(75, 23);
-            this.BTNCancel.TabIndex = 5;
-            this.BTNCancel.Text = "Cancelar";
-            this.BTNCancel.UseVisualStyleBackColor = true;
-            this.BTNCancel.Click += new System.EventHandler(this.BTNCancel_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(841, 19);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 30);
-            this.textBox3.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(712, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Quantidade do Produto: ";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(109, 27);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 30);
-            this.textBox4.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Preço de Compra: ";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(6, 88);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(940, 68);
-            this.groupBox3.TabIndex = 10;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Preco do Produto";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(448, 27);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(165, 30);
-            this.textBox5.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(349, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Preco de Venda:: ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(745, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(600, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Tipo de Venda:: ";
             // 
             // FCreateProduct
             // 
@@ -227,10 +239,10 @@
             this.Text = "FCreateProduct";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTProductListView)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DTProductListView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,12 +259,13 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView DTProductListView;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CMBSalesType;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
     }
 }
