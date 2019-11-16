@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +33,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CasaPatraoDesktop.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.6.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +57,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\AddValue.cs" />
+    <Compile Include="Domain\GenericValues.cs" />
+    <Compile Include="Domain\ProductDomain.cs" />
+    <Compile Include="Domain\Record.cs" />
+    <Compile Include="FCreateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCreateProduct.Designer.cs">
+      <DependentUpon>FCreateProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGeneric.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FGeneric.Designer.cs">
       <DependentUpon>FGeneric.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSales.Designer.cs">
+      <DependentUpon>FSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CasaPatraoServiceConsumer.cs" />
+    <EmbeddedResource Include="FCreateProduct.resx">
+      <DependentUpon>FCreateProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGeneric.resx">
       <DependentUpon>FGeneric.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +97,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,5 +111,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

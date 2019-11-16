@@ -27,5 +27,24 @@ namespace CasaPatraoDesktop
         {
             Application.Exit();
         }
+
+        private void PCreateProduct_Click(object sender, EventArgs e)
+        {
+            FCreateProduct createProduct = new FCreateProduct();
+            this.addFormOnContainer(createProduct);
+               }
+
+        private void addFormOnContainer(Form form)
+        {
+            if (form == null)
+                form = new Form();
+
+            form.FormBorderStyle = FormBorderStyle.None;
+            PGenericContainer.Controls.Clear();
+                      form.TopLevel = false;
+            form.Dock = DockStyle.Top;
+            PGenericContainer.Controls.Add(form);
+            form.Show();
+        }
     }
 }
